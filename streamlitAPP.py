@@ -39,7 +39,7 @@ with dataset:
         return f'background-color: {color}'
     st.header('The Dataset')
     df = pd.read_csv('final_nft_data_v2.csv', index_col=0)
-    st.dataframe(df.style.applymap(color_df, subset=['Compound Score']))
+    st.dataframe(df.head(100).style.applymap(color_df, subset=['Compound Score']))
     st.markdown('* **VADER Sentiment Analysis:** Using VADER we analyze all the #NFT tweets and extract the Compuond Score, Positive Score, Neutral Score, and Negative Score.')
 
     
