@@ -71,7 +71,7 @@ with interactive_viz:
 
 
     st.subheader('NFT Collections with the largest Volume in the past 7 days')
-    st.text('Excuse me ser, wen moon?')
+    st.text('Ser, wen moon?')
     
     sel_col, disp_col = st.columns(2)
 
