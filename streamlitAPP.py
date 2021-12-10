@@ -45,7 +45,8 @@ with dataset:
     
 # Interactive Visualization bin
 with interactive_viz:
-    st.header('gm, diamond hands, WAGMI, lfg')
+    beeple = Image.open('images/beeple.jpeg')
+    st.image(beeple)
     st.subheader('Top NFT Collections based on Compound Score')
     st.text('Whales & floor sweeps')
     
