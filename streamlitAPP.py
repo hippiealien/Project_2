@@ -53,12 +53,7 @@ with interactive_viz:
     collection_choice = st.selectbox('Which NFT Collection would you like to see?', collection_options, 0)
     choice_df = df[df.index==collection_choice]
 
-    fig = px.sunburst(
-    choice_df,
-    )
-
-    fig.update_layout(width=800)
-    st.write(fig)
+    st.plotly_chart(choice_df, use_container_width=800)
 
 
     st.image(beeple)
