@@ -59,11 +59,11 @@ with interactive_viz:
 
 
     st.subheader('NFT Collections with the highest Negative Score')
-    st.text('ngmi...FUD & Rugpulls ')
+    st.text('ngmi...FUD & Rugpulls')
     
     sel_col, disp_col = st.columns(2)
 
-    neg_score_value = sel_col.slider('How many of the collections with the highest Negative Scores would you like to see?', min_value=3, max_value=25, value=1, step=1)
+    neg_score_value = sel_col.slider('How many of the collections with the highest Negative Scores would you like to see?', min_value=1, max_value=25, value=4, step=1)
 
     neg_score = pd.DataFrame(df['Negative Score'].sort_values(ascending=True).head(neg_score_value))
     st.bar_chart(neg_score)
