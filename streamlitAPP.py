@@ -45,9 +45,9 @@ with dataset:
     
 # Interactive Visualization bin
 with interactive_viz:
-    st.header('The Top and the Not')
+    st.header('gm, diamond hands, WAGMI, lfg')
     st.subheader('Top NFT Collections based on Compound Score')
-    st.text('La creme de la creme')
+    st.text('Whales & floor sweeps')
     
     sel_col, disp_col = st.columns(2)
 
@@ -58,7 +58,7 @@ with interactive_viz:
 
 
     st.subheader('NFT Collections with the highest Negative Score')
-    st.text('Likely best to steer clear of these projects...')
+    st.text('ngmi...FUD & Rugpulls ')
     
     sel_col, disp_col = st.columns(2)
 
@@ -70,7 +70,7 @@ with interactive_viz:
 
 
     st.subheader('NFT Collections with the largest Volume in the past 7 days')
-    st.text('#wagmi')
+    st.text('Excuse me ser, wen moon?')
     
     sel_col, disp_col = st.columns(2)
 
@@ -81,7 +81,7 @@ with interactive_viz:
 
 
     st.subheader('NFT Collections with the largest number of sales in the past 7 days')
-    st.text('Selling like hot-cakes!')
+    st.text('LFG! wagmi')
     
     sel_col, disp_col = st.columns(2)
 
