@@ -1,4 +1,5 @@
 # Imports
+import plotly.figure_factory as ff
 import streamlit as st
 import pandas as pd
 from PIL import Image
