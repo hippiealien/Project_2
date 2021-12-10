@@ -7,3 +7,4 @@ splinter==0.16.0
 streamlit==1.2.0
 tweepy==4.4.0
 vaderSentiment==3.3.2
+plotly==4.1.0
