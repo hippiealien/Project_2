@@ -2,7 +2,6 @@
 
 import streamlit as st
 import pandas as pd
-import plotly.figure_factory as ff
 from PIL import Image
 
 # Config functions
@@ -49,14 +48,6 @@ with dataset:
 # Interactive Visualization bin
 with interactive_viz:
     beeple = Image.open('images/beeple1.png')
-
-    index = df.index
-    collection_options = index.unique().tolist()
-    collection_choice = st.selectbox('Which NFT Collection would you like to see?', collection_options, 0)
-    choice_df = df[df.index==collection_choice]
-
-    st.plotly_chart(choice_df, use_container_width=800)
-
 
     st.image(beeple)
     st.subheader('Top NFT Collections based on Compound Score')
