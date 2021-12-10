@@ -37,6 +37,7 @@ with dataset:
         else:
             color = 'red'
         return f'background-color: {color}'
+
     st.header('The Dataset')
     df = pd.read_csv('final_nft_data_v2.csv', index_col=0)
     st.dataframe(df.head(100).style.applymap(color_df, subset=['Compound Score']))
@@ -47,9 +48,10 @@ with dataset:
 with interactive_viz:
     beeple = Image.open('images/beeple1.png')
 
-    collection_options = df['Collection'].unique().tolist()
+    index = df.index
+    collection_options = index.unique().tolist()
     collection_choice = st.selectbox('Which NFT Collection would you like to see?', collection_options, 0)
-    choice_df = df[df['Collection']==collection_choice]
+    choice_df = df[df.index==collection_choice]
 
     fig = px.sunburst(
     choice_df,
