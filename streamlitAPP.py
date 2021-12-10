@@ -48,16 +48,16 @@ with dataset:
 with interactive_viz:
     beeple = Image.open('images/beeple1.png')
 
-collection_options = df['Collection'].unique().tolist()
-collection_choice = st.selectbox('Which NFT Collection would you like to see?', collection_options, 0)
-choice_df = df[df['Collection']==collection_choice]
+    collection_options = df['Collection'].unique().tolist()
+    collection_choice = st.selectbox('Which NFT Collection would you like to see?', collection_options, 0)
+    choice_df = df[df['Collection']==collection_choice]
 
-fig = px.sunburst(
+    fig = px.sunburst(
     choice_df,
-)
+    )
 
-fig.update_layout(width=800)
-st.write(fig)
+    fig.update_layout(width=800)
+    st.write(fig)
 
 
     st.image(beeple)
