@@ -1,7 +1,8 @@
 # Imports
-import plotly.figure_factory as ff
+
 import streamlit as st
 import pandas as pd
+import plotly.figure_factory as ff
 from PIL import Image
 
 # Config functions
